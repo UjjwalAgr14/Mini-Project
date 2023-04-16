@@ -2,10 +2,9 @@ version: 0.2
 
 phases:
  #  commands:
-     -dnf update -y
-     -dnf install httpd -y
-     -service httpd start
-     -chkconfig httpd on
+    #-dnf install httpd -y
+     #-service httpd start
+     #-chkconfig httpd on
   build:
     commands:
     - echo "This is build phase... Zipping my webpage"
