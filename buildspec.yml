@@ -1,6 +1,13 @@
 version: 0.2
 
 phases:
+  install:
+    commands:
+     -sudo su
+     -yum update -y
+     -yum install httpd -y
+     -service httpd start
+     -chkconfig httpd on
   build:
     commands:
     - echo "This is build phase... Zipping my webpage"
