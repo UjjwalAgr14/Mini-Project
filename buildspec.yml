@@ -1,8 +1,7 @@
 version: 0.2
 
 phases:
-  install:
-    commands:
+ #  commands:
      -dnf update -y
      -dnf install httpd -y
      -service httpd start
